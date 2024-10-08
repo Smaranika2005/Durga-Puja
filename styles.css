@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    background: url('durga.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    width: 90%;
+    margin: 20px auto;
+    max-width: 1200px; /* Limit the max-width */
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #f4c542;
+    text-shadow: 0 0 20px #f4c542, 0 0 30px #e64a19;
+}
+
+.pandal-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.pandal-list li {
+    margin: 10px 0;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    font-size: 1.2rem;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.5s ease, background 0.5s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideIn 1s ease-out forwards;
+    text-align: center;
+}
+
+/* Sequential animation */
+.pandal-list li:nth-child(1) { animation-delay: 0.3s; }
+.pandal-list li:nth-child(2) { animation-delay: 0.6s; }
+.pandal-list li:nth-child(3) { animation-delay: 0.9s; }
+.pandal-list li:nth-child(4) { animation-delay: 1.2s; }
+.pandal-list li:nth-child(5) { animation-delay: 1.5s; }
+.pandal-list li:nth-child(6) { animation-delay: 1.8s; }
+.pandal-list li:nth-child(7) { animation-delay: 2.1s; }
+.pandal-list li:nth-child(8) { animation-delay: 2.4s; }
+.pandal-list li:nth-child(9) { animation-delay: 2.7s; }
+.pandal-list li:nth-child(10) { animation-delay: 3s; }
+.pandal-list li:nth-child(11) { animation-delay: 3.3s; }
+.pandal-list li:nth-child(12) { animation-delay: 3.6s; }
+.pandal-list li:nth-child(13) { animation-delay: 3.9s; }
+.pandal-list li:nth-child(14) { animation-delay: 4.2s; }
+.pandal-list li:nth-child(15) { animation-delay: 4.5s; }
+.pandal-list li:nth-child(16) { animation-delay: 4.8s; }
+.pandal-list li:nth-child(17) { animation-delay: 5.1s; }
+.pandal-list li:nth-child(18) { animation-delay: 5.4s; }
+.pandal-list li:nth-child(19) { animation-delay: 5.7s; }
+.pandal-list li:nth-child(20) { animation-delay: 6.0s; }
+.pandal-list li:nth-child(21) { animation-delay: 6.3s; }
+.pandal-list li:nth-child(22) { animation-delay: 6.6s; }
+.pandal-list li:nth-child(23) { animation-delay: 6.9s; }
+.pandal-list li:nth-child(24) { animation-delay: 7.2s; }
+.pandal-list li:nth-child(25) { animation-delay: 7.5s; }
+.pandal-list li:nth-child(26) { animation-delay: 7.8s; }
+.pandal-list li:nth-child(27) { animation-delay: 8.1s; }
+.pandal-list li:nth-child(28) { animation-delay: 8.4s; }
+.pandal-list li:nth-child(29) { animation-delay: 8.7s; }
+.pandal-list li:nth-child(30) { animation-delay: 9.0s; }
+.pandal-list li:nth-child(31) { animation-delay: 9.3s; }
+.pandal-list li:nth-child(32) { animation-delay: 9.6s; }
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .pandal-list li {
+        font-size: 1rem;
+        padding: 12px 15px;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .pandal-list li {
+        font-size: 0.9rem;
+        padding: 10px 12px;
+    }
+}

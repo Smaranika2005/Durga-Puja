@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durga Puja Journey</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background: url('homedurga.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            color: #fff;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 50px;
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+            width: 90%;
+            max-width: 800px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            color: #f4c542;
+            animation: fadeInTitle 2s ease-out;
+            text-shadow: 0 0 20px #f4c542, 0 0 30px #e64a19;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px; /* Space between buttons */
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); /* Shadow on hover */
+        }
+
+        button img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .north-button {
+            background-color: #d32f2f; /* Red for North */
+        }
+
+        .north-button:hover {
+            background-color: #b71c1c;
+            box-shadow: 0 0 20px #ff6f61, 0 0 30px #d32f2f;
+        }
+
+        .central-button {
+            background-color: #fbc02d; /* Yellow for Central */
+        }
+
+        .central-button:hover {
+            background-color: #f57f17;
+            box-shadow: 0 0 20px #fff176, 0 0 30px #fbc02d;
+        }
+
+        .south-button {
+            background-color: #ff7043; /* Orange for South */
+        }
+
+        .south-button:hover {
+            background-color: #e64a19;
+            box-shadow: 0 0 20px #ffccbc, 0 0 30px #ff7043;
+        }
+
+        @keyframes fadeInTitle {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            button {
+                padding: 12px 25px;
+                font-size: 1.2rem;
+            }
+
+            button img {
+                width: 25px;
+                height: 25px;
+            }
+
+            .button-container {
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            button {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+
+            button img {
+                width: 20px;
+                height: 20px;
+            }
+
+            .button-container {
+                gap: 10px;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Where would you like to visit?</h1>
+        <div class="button-container">
+            <button class="north-button" onclick="goNorth()">
+                <img src="trishul.jpg" alt="Trishul Icon">
+                North
+            </button>
+            <button class="central-button" onclick="goCentral()">
+                <img src="kalash.png" alt="Kalash Icon">
+                Central
+            </button>
+            <button class="south-button" onclick="goSouth()">
+                <img src="lotus.png" alt="Lotus Icon">
+                South
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function goNorth() {
+            window.location.href = 'north.html'; // Link to the North page
+        }
+
+        function goSouth() {
+            window.location.href = 'south.html';
+        }
+
+        function goCentral() {
+            window.location.href = 'central.html';
+        }
+    </script>
+</body>
+</html>
+
